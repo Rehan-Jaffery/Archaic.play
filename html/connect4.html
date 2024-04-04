@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Connect4</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/connect4/style.css">
+</head>
+
+<body>
+  <section class="sub-color">
+    <nav>
+      <ul>
+        <li>
+          <a href="enjoy.html"> GO BACK</a>
+        </li>
+
+      </ul>
+
+      <img src="/images/aplogo.png" class="logo">
+      <ul>
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+
+      </ul>
+
+    </nav>
+  </section>
+
+  <section class="sub-color2">
+
+    <form>
+      <div class="board">
+        <div class="field">
+          <div class="grid column">
+            <input type="radio" name="slot11" tabindex="-1" required>
+            <input type="radio" name="slot11" tabindex="-1" required>
+            <div class="disc"></div>
+            <input type="radio" name="slot12" tabindex="-1" required>
+            <input type="radio" name="slot12" tabindex="-1" required>
+            <div class="disc"></div>
+            <input type="radio" name="slot13" tabindex="-1" required>
+            <input type="radio" name="slot13" tabindex="-1" required>
+            <div class="disc"></div>
+            <input type="radio" name="slot14" tabindex="-1" required>
+            <input type="radio" name="slot14" tabindex="-1" required>
+            <div class="disc"></div>
+            <input type="radio" name="slot15" tabindex="-1" required>
+            <input type="radio" name="slot15" tabindex="-1" required>
+            <div class="disc"></div>
+            <input type="radio" name="slot16" tabindex="-1" required>
+            <input type="radio" name="slot16" tabindex="-1" required>
+            <div class="disc"></div>
+
+
+            <div class="column">
+              <input type="radio" name="slot21" tabindex="-1" required>
+              <input type="radio" name="slot21" tabindex="-1" required>
+              <div class="disc"></div>
+              <input type="radio" name="slot22" tabindex="-1" required>
+              <input type="radio" name="slot22" tabindex="-1" required>
+              <div class="disc"></div>
+              <input type="radio" name="slot23" tabindex="-1" required>
+              <input type="radio" name="slot23" tabindex="-1" required>
+              <div class="disc"></div>
+              <input type="radio" name="slot24" tabindex="-1" required>
+              <input type="radio" name="slot24" tabindex="-1" required>
+              <div class="disc"></div>
+              <input type="radio" name="slot25" tabindex="-1" required>
+              <input type="radio" name="slot25" tabindex="-1" required>
+              <div class="disc"></div>
+              <input type="radio" name="slot26" tabindex="-1" required>
+              <input type="radio" name="slot26" tabindex="-1" required>
+              <div class="disc"></div>
+
+
+              <div class="column">
+                <input type="radio" name="slot31" tabindex="-1" required>
+                <input type="radio" name="slot31" tabindex="-1" required>
+                <div class="disc"></div>
+                <input type="radio" name="slot32" tabindex="-1" required>
+                <input type="radio" name="slot32" tabindex="-1" required>
+                <div class="disc"></div>
+                <input type="radio" name="slot33" tabindex="-1" required>
+                <input type="radio" name="slot33" tabindex="-1" required>
+                <div class="disc"></div>
+                <input type="radio" name="slot34" tabindex="-1" required>
+                <input type="radio" name="slot34" tabindex="-1" required>
+                <div class="disc"></div>
+                <input type="radio" name="slot35" tabindex="-1" required>
+                <input type="radio" name="slot35" tabindex="-1" required>
+                <div class="disc"></div>
+                <input type="radio" name="slot36" tabindex="-1" required>
+                <input type="radio" name="slot36" tabindex="-1" required>
+                <div class="disc"></div>
+
+
+                <div class="column">
+                  <input type="radio" name="slot41" tabindex="-1" required>
+                  <input type="radio" name="slot41" tabindex="-1" required>
+                  <div class="disc"></div>
+                  <input type="radio" name="slot42" tabindex="-1" required>
+                  <input type="radio" name="slot42" tabindex="-1" required>
+                  <div class="disc"></div>
+                  <input type="radio" name="slot43" tabindex="-1" required>
+                  <input type="radio" name="slot43" tabindex="-1" required>
+                  <div class="disc"></div>
+                  <input type="radio" name="slot44" tabindex="-1" required>
+                  <input type="radio" name="slot44" tabindex="-1" required>
+                  <div class="disc"></div>
+                  <input type="radio" name="slot45" tabindex="-1" required>
+                  <input type="radio" name="slot45" tabindex="-1" required>
+                  <div class="disc"></div>
+                  <input type="radio" name="slot46" tabindex="-1" required>
+                  <input type="radio" name="slot46" tabindex="-1" required>
+                  <div class="disc"></div>
+
+
+                  <div class="column">
+                    <input type="radio" name="slot51" tabindex="-1" required>
+                    <input type="radio" name="slot51" tabindex="-1" required>
+                    <div class="disc"></div>
+                    <input type="radio" name="slot52" tabindex="-1" required>
+                    <input type="radio" name="slot52" tabindex="-1" required>
+                    <div class="disc"></div>
+                    <input type="radio" name="slot53" tabindex="-1" required>
+                    <input type="radio" name="slot53" tabindex="-1" required>
+                    <div class="disc"></div>
+                    <input type="radio" name="slot54" tabindex="-1" required>
+                    <input type="radio" name="slot54" tabindex="-1" required>
+                    <div class="disc"></div>
+                    <input type="radio" name="slot55" tabindex="-1" required>
+                    <input type="radio" name="slot55" tabindex="-1" required>
+                    <div class="disc"></div>
+                    <input type="radio" name="slot56" tabindex="-1" required>
+                    <input type="radio" name="slot56" tabindex="-1" required>
+                    <div class="disc"></div>
+
+
+                    <div class="column">
+                      <input type="radio" name="slot61" tabindex="-1" required>
+                      <input type="radio" name="slot61" tabindex="-1" required>
+                      <div class="disc"></div>
+                      <input type="radio" name="slot62" tabindex="-1" required>
+                      <input type="radio" name="slot62" tabindex="-1" required>
+                      <div class="disc"></div>
+                      <input type="radio" name="slot63" tabindex="-1" required>
+                      <input type="radio" name="slot63" tabindex="-1" required>
+                      <div class="disc"></div>
+                      <input type="radio" name="slot64" tabindex="-1" required>
+                      <input type="radio" name="slot64" tabindex="-1" required>
+                      <div class="disc"></div>
+                      <input type="radio" name="slot65" tabindex="-1" required>
+                      <input type="radio" name="slot65" tabindex="-1" required>
+                      <div class="disc"></div>
+                      <input type="radio" name="slot66" tabindex="-1" required>
+                      <input type="radio" name="slot66" tabindex="-1" required>
+                      <div class="disc"></div>
+
+
+                      <div class="column">
+                        <input type="radio" name="slot71" tabindex="-1" required>
+                        <input type="radio" name="slot71" tabindex="-1" required>
+                        <div class="disc"></div>
+                        <input type="radio" name="slot72" tabindex="-1" required>
+                        <input type="radio" name="slot72" tabindex="-1" required>
+                        <div class="disc"></div>
+                        <input type="radio" name="slot73" tabindex="-1" required>
+                        <input type="radio" name="slot73" tabindex="-1" required>
+                        <div class="disc"></div>
+                        <input type="radio" name="slot74" tabindex="-1" required>
+                        <input type="radio" name="slot74" tabindex="-1" required>
+                        <div class="disc"></div>
+                        <input type="radio" name="slot75" tabindex="-1" required>
+                        <input type="radio" name="slot75" tabindex="-1" required>
+                        <div class="disc"></div>
+                        <input type="radio" name="slot76" tabindex="-1" required>
+                        <input type="radio" name="slot76" tabindex="-1" required>
+                        <div class="disc"></div>
+
+
+                        <div class="column"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="front"></div>
+      </div>
+      <button type="reset">New Game</button>
+    </form>
+  </section>
+
+
+
+  <script src="RPS/script.js"></script>
+</body>
+
+</html>

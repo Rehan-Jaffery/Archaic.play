@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Pacifico', cursive;
+  box-sizing: border-box;
+  background-image: url(/images/bg2.png);
+  background-size: 1300px;
+  text-align: center;
+}
+
+.sub-color {
+  height: 60px;
+  background-color: #358597;
+}
+
+.sub-color2 {
+  background-color: wheat;
+  height: 100vh;
+  width: 100%;
+  margin: 0 0;
+}
+
+.sub-color6 {
+  background-image: url(/images/gg.gif);
+  background-blend-mode: multiply;
+  background-position: 15cm;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-color: wheat;
+  height: 100vh;
+  width: 100%;
+  margin: 0 0;
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-family: 'Fondamento', cursive;
+  font-size: 20px;
+}
+
+nav img {
+  margin-top: 0.1cm;
+  width: 16%;
+  max-height: 1.2cm;
+}
+
+
+h1 {
+  font-size: 5rem;
+  color: #1e677f;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #250101;
+
+}
+
+.drim {
+  width: 5cm;
+  height: 3cm;
+}
+
+footer {
+  color: #440000;
+  font-family: sans-serif;
+  float: right;
+}
+
+.w {
+  background-image: url(/DrumKit/images/tom1.png);
+  background-size: 190px;
+
+}
+
+.a {
+  background-image: url(/DrumKit/images/tom2.png);
+  background-size: 190px;
+
+}
+
+.s {
+  background-image: url(/DrumKit/images/tom3.png);
+  background-size: 210px;
+
+}
+
+.d {
+  background-image: url(/DrumKit/images/tom4.png);
+  background-size: 180px;
+
+}
+
+.j {
+  background-image: url(/DrumKit/images/snare.png);
+  background-size: 150px;
+
+
+}
+
+.k {
+  background-image: url(/DrumKit/images/crash.png);
+  background-size: 190px;
+
+}
+
+.l {
+  background-image: url(/DrumKit/images/kick.png);
+  background-size: 170px;
+
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #c4cfd3;
+  opacity: 0.2;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 7px solid #272f47;
+  font-size: 3rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #1e0404;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}

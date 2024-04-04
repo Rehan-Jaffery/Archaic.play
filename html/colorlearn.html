@@ -1,0 +1,141 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Colors</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/css/style2.css">
+</head>
+
+<body>
+  <section class="sub-color">
+    <nav>
+      <ul>
+        <li>
+          <a href="learn.html"> GO BACK</a>
+        </li>
+
+      </ul>
+
+      <img src="/images/aplogo.png" class="logo">
+      <ul>
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+
+      </ul>
+
+    </nav>
+  </section>
+  <div class="container">
+    <h1>Tap the Colors</h1>
+
+
+    <main></main>
+  </div>
+  <script type="text/javascript">
+
+    const main = document.querySelector("main");
+    const voiceSelect = document.getElementById("voice");
+    const textarea = document.getElementById("text");
+    const readBtn = document.getElementById("read");
+    const toggleBtn = document.getElementById("toggle");
+    const closeBtn = document.getElementById("close");
+
+    const data = [
+      {
+        image: "blue.jpg",
+        text: "blue",
+      },
+      {
+        image: "black.jpg",
+        text: "black",
+      },
+      {
+        image: "grey.jpg",
+        text: "gray",
+      },
+      {
+        image: "green.jpg",
+        text: "green",
+      },
+      {
+        image: "violet.jpg",
+        text: "violet",
+      },
+      {
+        image: "yellow.jpg",
+        text: "yellow",
+      },
+      {
+        image: "brown.jpg",
+        text: "brown",
+      },
+      {
+        image: "red.jpg",
+        text: "red",
+      },
+      {
+        image: "orange.jpg",
+        text: "orange",
+      },
+      {
+        image: "pink.jpg",
+        text: "pink",
+      },
+    ];
+
+    data.forEach(createBox);
+
+
+    function createBox(item) {
+      const box = document.createElement("div");
+      const { image, text } = item;
+      box.classList.add("box");
+      box.innerHTML = `
+        <img src="${image}" alt="${text}" />
+        <p class="info">${text}</p>
+    `;
+      box.addEventListener("click", () => {
+        setTextMessage(text);
+        speakText();
+        //add active effect
+        box.classList.add("active");
+        setTimeout(() => box.classList.remove("active"), 800);
+      });
+      main.appendChild(box);
+    }
+
+    const message = new SpeechSynthesisUtterance();
+
+
+    function setTextMessage(text) {
+      message.text = text;
+    }
+
+
+    function speakText() {
+      speechSynthesis.speak(message);
+    }
+
+
+    let voices = [];
+    function getVoice() {
+      voices = speechSynthesis.getVoices();
+      voices.forEach((voice) => {
+        const option = document.createElement("option");
+        option.value = voice.name;
+        option.innerText = `${voice.name} ${voice.lang}`;
+        voiceSelect.appendChild(option);
+      });
+    }
+
+    speechSynthesis.addEventListener("voiceschanged", getVoice);
+    getVoice();
+  </script>
+
+  </html>
+  <a href="colorgame.html"><button class="hero-btn red-btn">
+      <br>
+      <h3>color quiz</h3>
+    </button>
